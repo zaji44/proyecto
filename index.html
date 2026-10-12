@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Simulador de Compras</title>
+    <!-- Estilos de Toastify CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 TechStore - Tienda Online</h1>
+    </header>
+
+    <main class="contenedor-principal">
+        <!-- Sección de Productos -->
+        <section class="seccion-productos">
+            <h2>Productos Disponibles</h2>
+            <div id="loader" class="loader">⏳ Cargando catálogo de productos...</div>
+            <div id="productos-container" class="grid-productos"></div>
+        </section>
+
+        <!-- Sección del Carrito -->
+        <section class="seccion-carrito">
+            <h2>🛒 Tu Carrito</h2>
+            <div id="carrito-container" class="lista-carrito">
+                <!-- Se llena dinámicamente con JS -->
+            </div>
+            
+            <div class="resumen-carrito">
+                <h3>Total: <span id="total-precio">$0</span></h3>
+                <div class="acciones-carrito">
+                    <button id="btn-vaciar" class="btn btn-vaciar">Vaciar Carrito</button>
+                    <button id="btn-finalizar" class="btn btn-comprar">Finalizar Compra</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Librería Toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Librería SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Tu archivo principal JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
